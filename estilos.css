@@ -293,6 +293,19 @@ form button:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+     .hero h1 {
+        font-size: 2em;
+        padding: 30px;
+        width: 90%;
+    }
+     nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    
     .header-container {
         flex-direction: column;
         align-items: center;
@@ -304,23 +317,56 @@ form button:hover {
 
     .mission, .vision {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .service-card {
         width: calc(50% - 20px);
+        margin-bottom: 20px;
     }
 
     .image-container img {
         width: 50%;
     }
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+    footer .social-icons {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 480px) {
+     .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .header-container h1 {
+        font-size: 18px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .about-us p, .contact p {
+        font-size: 14px;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+
     .service-card {
-        width: 100%;
+        padding: 15px;
+         width: 100%;
     }
 
     footer {
         font-size: 12px;
     }
 }
+
